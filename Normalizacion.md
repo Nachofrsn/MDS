@@ -29,7 +29,6 @@ CALCULAR ULT COMO ULTIMO nro_id EN INTERNACIONES
     estado_internacion = "activa"
 FIN CREAR
 
-
 DE OTRO MODO 
 
 CREAR INTERNACIONES CON 
@@ -43,7 +42,96 @@ FIN SI
 FIN
 
 EE2) COMIENZO
-ACEPTAR DATOS_INTERVENCION
+ACEPTAR DATOS_INTERVENCION 
+    PARA CADA INTERVENCION EN INTERVENCIONES HACER        
+        CREAR INTERVENCIONES CON 
+        nro_id = datos_intervencion.nro_id
+        fecha_internacion = datos_internacion.fecha_internacion
+        fh_intervencion = INTERVENCION.fh_intervencion
+        tipo_intervencion = intervencion.tipo_intervencion
+        evolucion = intervencion.evolucion
+        descripcion = intervencion.descripcion
+        FIN CREAR
+    FIN PARA CADA
+FIN
+
+EE3)
+COMIENZO
+    ACEPTAR DATOS_ALTA
+    ACTUALIzar iNTERNACIONES CON FECHA_ALTA = HOY() Y ESTADO_INTERNACION = "CERRADA" DONDE NRO_ID = DATOS_ALTA.NRO_ID Y F"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
